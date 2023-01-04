@@ -9,3 +9,5 @@ const getInfo = () => {
     return;
   }
 }
+
+window.addEventListener("load", getInfo);
