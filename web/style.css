@@ -35,3 +35,7 @@ body {
   color: #17113e;
   border-bottom: 1.5px solid #1c145c;
 }
+
+.search-container input:focus {
+  border-color: #5372F0;
+}
