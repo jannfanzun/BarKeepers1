@@ -27,3 +27,11 @@ body {
   margin-bottom: 1.2em;
 }
 
+.search-container input {
+  font-size: 1em;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  color: #17113e;
+  border-bottom: 1.5px solid #1c145c;
+}
