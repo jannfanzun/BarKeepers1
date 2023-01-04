@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/web/style.css">
+    <title>Random Cocktails</title>
+  </head>
+  <body>
+    <h1>Random Cocktails</h1>
+    <ul id="cocktail-list">
+    </ul>
+    <button id="get-cocktails-button">Get Random Cocktails</button>
+
+    <script>
+      const cocktailList = document.getElementById('cocktail-list');
+      const getCocktailsButton = document.getElementById('get-cocktails-button');
+
+      function getRandomCocktails() {
+        fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
+          .then(response => response.json())
+          .then(data => {
+            const cocktails = data.drinks;
+            cocktails.forEach(cocktail => {
+              const li = document.createElement('li');
+              li.classList.add('cocktail-item');
+
+              const img = document.createElement('img');
+              img.classList.add('cocktail-image');
+              img.src = cocktail.strDrinkThumb;
+              li.appendChild(img);
+
+              const span = document.createElement('span');
+              span.classList.add('cocktail-name');
+              span.textContent = cocktail.strDrink;
+              li.appendChild(span);
+
+              cocktailList.appendChild(li);
+            });
+          });
+      }
+
+      getCocktailsButton.addEventListener('click', getRandomCocktails);
+    </script>
+  </body>
+</html>

@@ -6,7 +6,12 @@
 }
 body {
   height: 100vh;
-  background:   linear-gradient(to bottom right, blue, rgb(0, 0, 0), rgb(4, 98, 229));
+  background: linear-gradient(
+    to bottom right,
+    blue,
+    rgb(0, 0, 0),
+    rgb(4, 98, 229)
+  );
 }
 .container {
   position: absolute;
@@ -23,10 +28,23 @@ body {
 .container1 {
   position: absolute;
   transform: translate(-50%, -50%);
-  margin-top: 23%;
-  left: 50%;
+  margin-top: 21%;
+  left: 25%;
   width: 120vw;
-  max-width: 70em;
+  max-width: 35em;
+  height: 35vw;
+  background-color: #ffffff;
+  padding: 1.8em;
+  border-radius: 0.6em;
+  box-shadow: 0 1em 3em rgba(2, 9, 38, 0.25);
+}
+.container2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-top: 21%;
+  left: 75%;
+  width: 120vw;
+  max-width: 35em;
   height: 35vw;
   background-color: #ffffff;
   padding: 1.8em;
@@ -51,7 +69,7 @@ body {
 }
 
 .search-container input:focus {
-  border-color: #5372F0;
+  border-color: #5372f0;
 }
 
 .search-container button {
@@ -59,9 +77,9 @@ body {
   border-radius: 2em;
   background-color: #5372f0;
   border: none;
-    outline: none;
-    color: #ffffff;
-    cursor: pointer;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 ul {
@@ -74,7 +92,7 @@ ul {
 
 li {
   float: left;
-  border-right:1px solid #bbb;
+  border-right: 1px solid #bbb;
 }
 
 li:last-child {
@@ -94,7 +112,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: #5372F0;
+  background-color: #5372f0;
 }
 
 .logo {
@@ -103,4 +121,20 @@ li a:hover:not(.active) {
   width: 9%;
   height: 9%;
   margin-left: 10px;
-  }
+}
+
+.cocktail-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+.cocktail-name {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.cocktail-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
