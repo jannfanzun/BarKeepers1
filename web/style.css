@@ -82,7 +82,7 @@ body {
   cursor: pointer;
 }
 
-ul {
+.navigationbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -90,16 +90,16 @@ ul {
   background-color: rgb(0, 0, 0);
 }
 
-li {
+.navigationbar li {
   float: left;
   border-right: 1px solid #bbb;
 }
 
-li:last-child {
+.navigationbar li:last-child {
   border-right: none;
 }
 
-li a {
+.navigationbar li a {
   display: block;
   color: white;
   text-align: center;
@@ -107,7 +107,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.navigationbar li a:hover:not(.active) {
   background-color: #111;
 }
 
@@ -147,6 +147,7 @@ li a:hover:not(.active) {
   display: block;
   max-width: 12.5em;
   margin: auto;
+  border-radius: 200px;
 }
 #result h2 {
   font-size: 1.25em;
@@ -157,4 +158,48 @@ li a:hover:not(.active) {
   letter-spacing: 0.05em;
   color: #1F194C;
   position: relative;
+}
+#result h2:before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 3px;
+  background-color: #5372F0;
+  left: 42.5%;
+  bottom: -0.3em;
+}
+#result h3 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+  color: #1F194C;
+}
+#result ul {
+  margin-bottom: 1em;
+  margin-left: 1.8em;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+#result li {
+  margin-bottom: 0.3em;
+}
+#result p {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 0.95em;
+}
+.msg {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 14px;
+  }
+  .container1{
+    font-size: 14px;
+  }
+  .container2{
+    font-size: 14px;
+  }
 }
