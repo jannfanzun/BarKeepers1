@@ -10,5 +10,12 @@ const getInfo = () => {
   }
 }
 
+let ingredients = "";
+for (let i = 1; i <= 18; i++) {
+  if (drink[`strIngredient${i}`]) {
+    ingredients += `<li>${drink[`strMeasure${i}`]} ${drink[`strIngredient${i}`]}</li>`;
+  }
+}
+
 window.addEventListener("load", getInfo);
 searchBtn.addEventListener("click", getInfo);
