@@ -8,4 +8,4 @@ const getInfo = () => {
     result.innerHTML = `<h3 class="msg">Das Input Feld darf nicht leer sein!</h3>`;
     return;
   }
-
+}
