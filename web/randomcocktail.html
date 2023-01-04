@@ -2,13 +2,22 @@
 <html>
   <head>
     <link rel="stylesheet" href="/web/style.css">
-    <title>Random Cocktails</title>
+    <title>Get a Random Cocktail</title>
   </head>
   <body>
+    <nav>
+      <nav class="navigationbar">
+        <ul>
+          <a href="index.html"><img  class="logo" src="/images/barkeeperslogow.png"></a>
+        <li style="float:right"><a class="active" href="index.html">Suchen</a></li>
+        <li style="float:right"><a href="barkeepers.html">Barkeepers</a></li>
+        <li style="float:right"><a href="drinks.html">Drinks</a></li>
+      </ul>
+    </nav>
     <h1>Random Cocktails</h1>
     <ul id="cocktail-list">
     </ul>
-    <button id="get-cocktails-button">Get Random Cocktails</button>
+    <button id="get-cocktails-button">Click here to get random Cocktail</button>
 
     <script>
       const cocktailList = document.getElementById('cocktail-list');
