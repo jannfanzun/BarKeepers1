@@ -20,6 +20,20 @@ body {
   border-radius: 0.6em;
   box-shadow: 0 1em 3em rgba(2, 9, 38, 0.25);
 }
+.container1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-top: 23%;
+  left: 50%;
+  width: 120vw;
+  max-width: 70em;
+  height: 35vw;
+  background-color: #ffffff;
+  padding: 1.8em;
+  border-radius: 0.6em;
+  box-shadow: 0 1em 3em rgba(2, 9, 38, 0.25);
+}
+
 .search-container {
   display: grid;
   grid-template-columns: 9fr 3fr;
