@@ -11,3 +11,4 @@ const getInfo = () => {
 }
 
 window.addEventListener("load", getInfo);
+searchBtn.addEventListener("click", getInfo);
