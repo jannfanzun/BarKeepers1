@@ -33,7 +33,7 @@ for (let i = 1; i <= 18; i++) {
         <h3>Rezept:</h3>
         <p>${drink.strInstructions}</p>
       `;
-    })}
+    })
     .catch(() => {
       result.innerHTML = `<h3 class="msg">Ein Fehler ist aufgetreten. Bitte versuche es später erneut!</h3>`;
     });
