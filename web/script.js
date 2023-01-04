@@ -24,7 +24,19 @@ for (let i = 1; i <= 18; i++) {
   if (drink[`strIngredient${i}`]) {
     ingredients += `<li>${drink[`strMeasure${i}`]} ${drink[`strIngredient${i}`]}</li>`;
   }
-
-
+}
+  result.innerHTML = `
+        <img src=${drink.strDrinkThumb}>
+        <h2>${drink.strDrink}</h2>
+        <h3>Zutaten:</h3>
+        <ul class="ingredients">${ingredients}</ul>
+        <h3>Rezept:</h3>
+        <p>${drink.strInstructions}</p>
+      `;
+    })}
+    .catch(() => {
+      result.innerHTML = `<h3 class="msg">Ein Fehler ist aufgetreten. Bitte versuche es später erneut!</h3>`;
+    });
+};
 window.addEventListener("load", getInfo);
 searchBtn.addEventListener("click", getInfo);
