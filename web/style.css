@@ -213,3 +213,28 @@ body {
 p1 {
   color: white !important;
 }
+
+.container1 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-top: 21%;
+  left: 25%;
+  width: 120vw;
+  max-width: 35em;
+  height: 35vw;
+  background-color: transparent;
+  padding: 1.8em;
+  border-radius: 0.6em;
+}
+.container2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin-top: 21%;
+  left: 75%;
+  width: 120vw;
+  max-width: 35em;
+  height: 35vw;
+  background-color: transparent;
+  padding: 1.8em;
+  border-radius: 0.6em;
+}
