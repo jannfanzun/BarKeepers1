@@ -15,20 +15,22 @@
         <li style="float:right"><a class="active" href="randomcocktail.html">Random</a></li>
       </ul>
     </nav>
-   
-    
+
+
     <div class="container">
       <h1>Random Cocktails</h1>
-      <div class="search-container">
+      <div id="random-btn-container">
+        <button id="random-btn">Zufälliger Cocktail</button>
+      </div>
+      <div class="random-container">
         <div id="cocktail-list">
         </div>
-        <button id="get-cocktails-button">Zufälliger Cocktail</button>
       </div>
     </div>
 
     <script>
       const cocktailList = document.getElementById('cocktail-list');
-      const getCocktailsButton = document.getElementById('get-cocktails-button');
+      const getCocktailsButton = document.getElementById('random-btn');
 
       function getRandomCocktails() {
         fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
