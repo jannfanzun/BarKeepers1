@@ -35,7 +35,7 @@ for (let i = 1; i <= 18; i++) {
       `;
     })
     .catch(() => {
-      result.innerHTML = `<h3 class="msg">Ein Fehler ist aufgetreten. Bitte versuche es später erneut!</h3>`;
+      result.innerHTML = `<h3 class="msg">Bitte geben Sie einen gültigen Namen ein!</h3>`;
     });
 };
 window.addEventListener("load", getInfo);
