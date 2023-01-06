@@ -16,15 +16,18 @@ Wir verwenden eine Cocktail DataBase API --> [(Unsere API)](https://apilist.fun/
 
 ## Teammitglieder
 
-- Jann Fanzun
-- Dominik Schweizer
+#### Jann Fanzun
+![img](images/jannprofile.png)
+
+#### Dominik Schweizer
+![img](images/dominikprofile.png)
 
 ---
 
 ## SMART Ziele
 
 - **Specific (spezifisch):** Es wird eine Cocktail Webanwendung erstellt.
-- **Measurable (messbar):** Es werden drei Seiten programmiert —> Most popular drinks, non alcoholic, Startseite
+- **Measurable (messbar):** Es werden drei Seiten programmiert —> Suchen, Zufällig und Startseite
 - **Achievable (erreichbar):** Man hat eine Navigation, eine Startseite und Drink Seiten
 - **Relevant (relevant)**: Die Arbeit gelingt uns gut und wir können schnell voranarbeiten.
 - **Time-bound:** Das Projekt ist am Freitag Morgen beendet.
